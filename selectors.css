@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    color: red;
+}
+
+.class {
+    background-color: red;
+}
+
+#welcome {
+    font-size: 10px;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 70px;
+}
+
+h1,
+p {
+    color: blue;
+}
+
+.parent div {
+    background-color: orange;
+}
+
+.child-selector>div.hi {
+    font-size: larger;
+    color: green;
+}
+
+.adjacent-div+p {
+    color: purple;
+}
