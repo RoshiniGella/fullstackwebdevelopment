@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            background-color: blue;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: skyblue;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        #input name:focus {
+            border: 1px solid red;
+            outline: none;
+        }
+
+        p:nth-child(1) {
+            color: red;
+        }
+
+        .paragraph::first-letter {
+            font-weight: bolder;
+        }
+
+        .paragraph::first-line {
+            color: blue;
+            font-weight: bolder;
+        }
+
+        p::before {
+            content: "dummy";
+        }
+
+        p {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">
+        This is button</button>
+    </button>
+    <input type="text" name="" id="inputname">
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+    </div>
+    <p class="paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vel, quae ipsam quis error inventore
+        incidunt voluptas adipisci maxime laboriosam cupiditate consectetur itaque quas sequi doloremque nostrum
+        excepturi temporibus explicabo enim eos? Possimus recusandae, sit itaque eaque laudantium repellendus enim ipsa
+        esse. Voluptatem adipisci molestias fuga qui quibusdam animi reprehenderit.
+    </p>
+</body>
+
+</html>
