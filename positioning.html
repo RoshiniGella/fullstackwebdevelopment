@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+</head>
+<style>
+    .paragraph {
+        position: static;
+        top: 40px;
+        left: 40px;
+    }
+
+    .paragraph {
+        position: relative;
+        top: 40px;
+        left: 40px;
+        bottom: 40px;
+    }
+
+    .paragraph {
+        position: absolute;
+        top: 0px;
+    }
+
+    .fix {
+        position: fixed;
+        top: 20px;
+        font-size: 30px;
+        ;
+    }
+
+    .stick {
+        position: sticky;
+        top: 0px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum in numquam facilis repellendus nobis labore
+        voluptas, quaerat assumenda animi ratione incidunt porro molestias doloremque praesentium! Voluptates fugit
+        deleniti unde eligendi delectus doloremque a possimus cum vitae. Nobis sint optio, exercitationem, illo non,
+        praesentium neque veniam commodi magni dolorem facilis ullam.
+    </p>
+    <div class="fix">
+        This is fixed positioning
+    </div>
+    <p class="stick">
+        This is a sticky programming
+    </p>
+</body>
+
+</html>
