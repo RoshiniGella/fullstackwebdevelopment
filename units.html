@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .units-header {
+            font-size: 20px;
+            display: flex;
+        }
+
+        .units-head1 {
+            font-size: 1em;
+        }
+
+        .units-head2 {
+            font-size: 2em;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        .units-head1 {
+            font-size: 1rem;
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+        }
+
+        .units-head2 {
+            font-size: 2rem;
+            background-color: brown;
+            height: 50vh;
+            width: 50vw;
+        }
+
+        .p-left {
+            background-color: black;
+            width: 50%;
+        }
+
+        .p-right {
+            background-color: blue;
+            width: 50%;
+        }
+
+        .percentage-unit {
+            display: flex;
+            width: 300px;
+        }
+
+        @media (max-width:600px) {
+            .p-left {
+                background-color: red;
+            }
+
+            .p-right {
+                background-color: green;
+            }
+        }
+
+        body {
+            background-color: black;
+        }
+
+        @media (orientation:portrait) {
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="units-header">
+        <div class="units-head1">
+            This is head
+        </div>
+        <div class="units-head2">
+            This is head
+        </div>
+    </div>
+    <div class="percentage-unit">
+        <div class="p-left">
+            left
+        </div>
+        <div class="p-right">
+            right
+        </div>
+    </div>
+</body>
+
+</html>
