@@ -47,8 +47,6 @@
             padding: 20px 10px;
             border-radius: 20px;
             position: relative;
-
-
         }
 
         .image1 {
@@ -96,6 +94,116 @@
             top: -50px;
             right: 25px;
         }
+
+        .cfont {
+            font-size: 55px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(250, 250, 250);
+            height: 50vh;
+            margin-bottom: 0px;
+        }
+
+        .footer div {
+            margin-top: 50px;
+            width: 30%;
+            border-right: #009cd9 2px solid;
+        }
+
+        .footer p {
+            font-size: 15px;
+            margin-bottom: 20px;
+            width: 60%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+        }
+
+        .footer img {
+            height: 100px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .vline {
+            position: absolute;
+            height: 250px;
+            background-color: rgb(210, 165, 165);
+            opacity: .3;
+            margin: 0 30px 10px 10px;
+            border-right: #009cd9 2px solid;
+        }
+
+        .lfooter {
+            display: flex;
+            position: relative;
+            margin-top: 0px;
+            background-color: rgb(250, 250, 250);
+            height: 20vh;
+        }
+
+        .lfooter .rights {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+            font-size: 15px;
+            padding-left: 20px;
+            margin-top: 30px;
+            width: 60%;
+        }
+
+        .social {
+            position: absolute;
+            top: 35px;
+            right: 40px;
+        }
+
+        @media (max-width:480px) {
+            .container2 image {
+                height: 101px;
+                width: 110px;
+                right: 25px;
+                top: -56;
+
+            }
+
+            .container2 h2 {
+                padding-top: 35px;
+
+            }
+
+            .container2 h2,
+            p {
+                width: auto;
+                padding-right: 20px;
+            }
+        }
+
+        @media (max-width:890px) {
+            .container2 image {
+                height: 136px;
+                width: 131px;
+                top: -77px;
+                right: calc(50% - 65px);
+
+            }
+
+            .container2 h2 {
+                padding-top: 50px;
+
+            }
+
+            .container2 p,
+            h2 {
+                width: auto;
+                padding-right: 20px;
+
+            }
     </style>
 </head>
 
@@ -118,7 +226,7 @@
             </div>
         </div>
     </div>
-    <h1>Our Innovative <span class="highlight">products</span></h1>
+    <h1 class="cfont">Our Innovative <span class="highlight">products</span></h1>
     <div class="container1">
         <h1>CRM Platform: Redefining Customer Relationships</h1>
         <p>Our CRM platform is more than just a tool; it's a strategy for success. Designed to simplify and enhance how
@@ -159,8 +267,43 @@
                 alt="this is image">
         </div>
     </div>
+    <div class="footer">
+        <div>
+            <img src="	https://elberttech.com/assets/Footer_logo-D5IX5x7B.svg" alt="image">
+        </div>
+        <div>
+            <p style="color: rgb(41, 158, 41);">Products</p>
+            <p>Resume Builder</p>
+            <p>Portfolio Builder</p>
+            <p>CRM</p>
+        </div>
+        <div>
+            <p style="color: rgb(41, 158, 41);">Industries</p>
+            <p>Health Care</p>
+            <p>Finance</p>
+            <p>Retail</p>
+            <p>Education</p>
+            <p>Retail</p>
+            <p>Airline</p>
+        </div>
     </div>
-    
+    <h1
+        style="border-top: 2px solid rgb(221, 221, 221); border-right: none; border-bottom: none; border-left: none; border-image: initial; margin: 0px 0px; width: 100%; opacity: 0.8;">
+        <div class="lfooter">
+            <div class="rights">© 2025 Elbert Technology. All rights reserved.</div>
+            <div class="social">
+                <a href="https://www.facebook.com/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJTSURBVHgBtVU/b9NQEL97eU1Dp/AJiAQD6tSqHwAzkHTDqOmMuzQVS5NPkGRjwwsi6tKwMUSVu6B0czYWhCfEggifALOg/rF93HPjyAQ7dpv0J1m+d+/+vXv37hDmQNOb5aL8c4iAGhBUAPljEJDLPAfAP0VPWkOrN06zgUnMbf2gQpKOlQ/IA4Q+XmE3yVFhllHbbRySoA8c4WPIjw0QYDxa37r4/vXzp1QH1fpBm4/0mo2X4OZgHdx+uL4F7GT0nwMVuTKexxIBOCz7jckx0y5zSlFQ6r74JL+jk4R3oHIeyOALb5YzbDvo4YvZXFd39vuI+DLGclluU8mJMKICtTONI4wvvHtP51VMDOVJkXDSrivmR5YGBrg3POn14zyNddW/uEJvkECf1eGA7kuSgZ5Srf/AL/hOfF3baRwDkhEuKFmH31CTU4TPIQdW/OKviFan5piMLB1O+xPBr3ID7gr88kWOyrk9uL1grd6gtP1CICsfT97+hAxU6w0ucUjMhGAvY1gQacYZrlD1DQvg2e6reXfoSAIcIZCWtOuj16rW911FX3prpm2ZIa3pBrfxYlPRGPgP0qucTuWld26uytV24j6CmgUhuSau1MsMHZSgVObqa09kUoGesIRt9ZWSDcsGz4hpL+LGtKemFCwJ4cTjAaTo0IHyhFDowpLAWZtONxExzwbvTM73wk64YLpngyMzWov45nDQ6zCrdZt0XetQazg46sT5YlZQnUR4YpOI3kN+2EonHnkEmSQ9yZ/BXbMzaedJHdfmlI7OvdL0fSThLzPh4CQI41lMAAAAAElFTkSuQmCC"
+                        alt="Facebook"></a>
+                <a href="https://x.com/"><img
+                        src="data:image/svg+xml,%3csvg%20width='24'%20height='22'%20viewBox='0%200%2024%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.9455%2022L10.396%2014.0901L3.44886%2022H0.509766L9.09209%2012.2311L0.509766%200H8.05571L13.286%207.45502L19.8393%200H22.7784L14.5943%209.31648L23.4914%2022H15.9455ZM19.2185%2019.77H17.2398L4.71811%202.23H6.6971L11.7121%209.25316L12.5793%2010.4719L19.2185%2019.77Z'%20fill='%23475467'/%3e%3c/svg%3e"
+                        alt="X"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFxSURBVHgB7VRBToNAFP2/JTFxxQ3sEbyBLIy4s0ZcGza2O9oTFG6Au1o3dS0xLKsuxBvoCcQTyM5EDd8/BZRBTUMG4saXkOHPPP6b+bz5aB4OHCJyEVCHxkFjDQh8Tg7tACcdaBf6NwE+jYeY2ly2c2gAmhySvwhO3TyYm9Zgg0cDFCCdgAju5JieQBGSAHZwr3jf7Q97XK4tUARyGagyF/GPiHn3/Sasq/0wZ7B1YZV1CShhVsyshOk6j5srBfgj7zqYuUVsHgweWaeXpql9c3k2F3Pb1tDoYuq8vq3bUegnBVeUlLp0K/jlnLXvgfYO8dXFbL+cXGARTmNEtKv82gIikRiN/kgXj7QWTCMu172SgMCONZysaS/P4jGt45G0SPSgLACQlpMelVfYHImSQH4/vkqDspUJSU2gLv4F/l6g2uz4olC5ZTtLxyCElPsbaRk7JQ73Ijr5TJh1YOM3gcbRybpiiwIIXQ9aQLZxGn8Aa2CCQIQ45icAAAAASUVORK5CYII="
+                        alt="LinkedIn"></a>
+            </div>
+        </div>
+        </div>
 </body>
 
 </html>
