@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./text.js"></script>
+    <style>
+        .maincontainer {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer" id="root">
+    </div>
+    <script>
+        let rootElement = document.getElementById("root");
+        rootElement.innerHTML = "this is roshini";
+        /* rootElement.style.color="green";*/
+        rootElement.style.fontSize = "50px";
+        let heading1 = document.createElement("h1");
+        heading1.textContent = "this is h1";
+        heading1.style.color = "red";
+        rootElement.appendChild(heading1);
+        let paragraph= document.createElement("paragraph");
+        paragraph.textContent = "a para describes about ourself";
+        paragraph.style.color = "red";
+        rootElement.appendChild(paragraph);
+        rootElement.classList.add(maincontainer);
+    </script>
+</body>
+
+</html>
