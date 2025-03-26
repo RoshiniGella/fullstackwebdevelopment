@@ -7,8 +7,9 @@
     <title>Document</title>
     <script src="./text.js"></script>
     <style>
-        .maincontainer {
-            color: aqua;
+        .mainheading {
+            color: blue;
+            font-size: large;
         }
     </style>
 </head>
@@ -19,17 +20,39 @@
     <script>
         let rootElement = document.getElementById("root");
         rootElement.innerHTML = "this is roshini";
-        /* rootElement.style.color="green";*/
+        rootElement.style.color = "green";
         rootElement.style.fontSize = "50px";
+
         let heading1 = document.createElement("h1");
         heading1.textContent = "this is h1";
-        heading1.style.color = "red";
+        //heading1.style.color = "red";
         rootElement.appendChild(heading1);
-        let paragraph= document.createElement("paragraph");
+
+        let paragraph = document.createElement("paragraph");
         paragraph.textContent = "a para describes about ourself";
         paragraph.style.color = "red";
         rootElement.appendChild(paragraph);
-        rootElement.classList.add(maincontainer);
+
+        // rootElement.classList.add("mainheading");
+        //heading1.setAttribute("class", "mainheading");
+        //rootElement.removeChild(heading1)
+        heading1.addEventListener("click", function () {
+            heading1.classList.toggle("mainheading")
+        });
+        heading1.addEventListener("mouseover", function () {
+            heading1.classList.add("mainheading")
+        });
+       // document.addEventListener("keydown", function (event) {
+            //console.log("the key is pressed is;", event.key)
+       // });
+        document.addEventListener("keyup", function (event) {
+            console.log("the key is released is;", event.key)
+        });
+        document.addEventListener("keydown", function (event) {
+            if(event.key=="g"){
+            console.log("the key is pressed is;", event.key)
+            }
+        });
     </script>
 </body>
 
