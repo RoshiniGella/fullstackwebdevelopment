@@ -17,5 +17,8 @@ const cars=[
 ];
     const expensiveCars = cars.filter(car => car.price > 10000);
     console.log(expensiveCars);
+    const filteredCars = cars.filter(car =>car.color === "ash");
+console.log(filteredCars);
+    
 
     
