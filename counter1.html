@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        .container {
+            width: 500px;
+            background-color: antiquewhite;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <ul id="unorder">
+        </ul>
+    </div>
+
+    <script>
+        const employeesData = [
+            {
+                employee: "roshi",
+                employeeId: 1,
+                employeeSalary: 5000,
+                address: "kodad"
+            },
+            {
+                employee: "sai",
+                employeeId: 2,
+                employeeSalary: 15000,
+                address: "kodad"
+            },
+            {
+                employee: "harini",
+                employeeId: 3,
+                employeeSalary: 25000,
+                address: "kodad"
+            }
+        ];
+
+        const ulitem = document.getElementById("unorder");
+        for (let i = 0; i <= employeesData.length - 1; i++) {
+            const li = document.createElement("li");
+            li.textContent = `${employeesData[i].employeeId},${employeesData[i].employee},${employeesData[i].employeeSalary}`;
+            ulitem.appendChild(li);
+        };
+    </script>
+</body>
+
+</html>
